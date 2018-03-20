@@ -7,7 +7,7 @@ var log = debug('cs-plugin-vendor-indexes')
 global.api = `http://${argv.api}`
 
 switch (argv.cmd) {
-	case 'packager':
+	case 'index+backups':
 		log(argv.profile)
 		const targets = JSON.parse(argv.targets)
 		log(targets)

@@ -17,8 +17,9 @@
 	"license": "MIT",
 	"devDependencies": {},
 	"dependencies": {
-		"debug": "git://github.com/kennyarehart/debug.git",
-		"request": "^2.85.0"
+		"debug": "git://github.com/gmcdev/debug.git",
+		"fs-extra": "^5.0.0",
+		"minimist": "^1.2.0"
 	},
 	"wp-creative-server": {
 		"routes": {
@@ -26,7 +27,7 @@
 		},
 		"hooks": {
 			"bulk-control": {
-				"Bulk Compile": "/api/?cmd=bulk"
+				"Vendor Indexes": "/api/?cmd=index+backups"
 			}
 		}
 	}
